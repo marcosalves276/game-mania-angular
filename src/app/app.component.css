@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;600;800&display=swap');
+* {
+    font-family: Blinker;
+}
+
+header {
+    background-color: #000000;
+}
+#logo {
+    border-radius: 50% ;
+}
+
+#background {
+    background-image: url("/assets/imagens/BG01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    border-bottom: 2px solid rgba(206, 190, 190, 0.8);
+}
+
+#background2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background2 .descricao {
+    color: #ffffff;
+    width: 50%;
+    margin-left: 2%;
+}
+
+#logo {
+    animation: mexer 2s infinite;
+}
+
+#background2 .descricao h1 {
+    font-weight: 600;
+}
+
+#background2 .descricao p {
+    font-size: 22px;
+}
+
+.icones-gamer {
+    display: flex;
+    width: auto;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+
+.icones-gamer .ico {
+    color: #ffffff;
+    text-align: center;
+    margin: 5%;
+}
+
+.icones-gamer .ico:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+@keyframes mexer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* ----------- Destaques -----------*/
+
+#item01 {
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #252525, #1a036e);
+    background: linear-gradient(to bottom, #252525, #1a036e);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.titulo span {
+    width: 5px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0 15px 0 15px;
+}
+
+.descricao-item {
+    width: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-item .barra {
+    background: #159957 !important;
+    background: -webkit-linear-gradient(to bottom, #155799, #7a1599) !important;
+    background: linear-gradient(to bottom, #155799, #7a1599) !important;
+    opacity: .5;
+    width: 20px;
+    height: 300px;
+    margin: 0 5% 0 5%;
+}
+
+.descricao-item button {
+    background: #159957 !important;
+    background: -webkit-linear-gradient(to right, #155799, #7a1599) !important;
+    background: linear-gradient(to right, #155799, #7a1599) !important;
+    width: 200px;
+    height: 40px;
+}
+
+.descricao-item button img {
+    margin-left: 20px;
+    filter: invert(100%);
+}
+
+.item-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    color: #ffffff;
+}
+
+.item-img img {
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.blockquote {
+    margin: 5px;
+}
+
+.blockquote footer {
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.carousel-inner img,
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* ------------- Sessão contatos ------------- */
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/assets/imagens/bgcontato.jpg");
+    background-size: cover;
+    border-top: solid 1px #434343;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #fff;
+    font-family: var(--font-secundary);
+}
+
+.contact .content p {
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secundary);
+    font-size: 1.1em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.container-contato {
+    font-family: var(--font-secundary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-contato .contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contato .contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-contato .contact-info .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container-contato .contact-info .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.container-contato .contact-info .box .text h3 {
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    opacity: .9;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.contact-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#whats {
+    color: darkgreen
+}
+
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+}
+
+.contact-form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #333;
+}
+
+.contact-form .inputBox input:focus~span,
+.contact-form .inputBox input:valid~span,
+.contact-form .inputBox textarea:focus~span,
+.contact-form .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    font-weight: bolder;
+}
+
+.contact-form .inputBox input[type="submit"] {
+    border-radius: 5px;
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+}
+
+@media (max-width:991px) {
+    .contact {
+        padding: 50px;
+    }
+    .container-contato {
+        flex-direction: column;
+    }
+    .container-contato .contact-info {
+        margin-bottom: 40px;
+    }
+    .container-contato .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
