@@ -1,0 +1,57 @@
+<section class="contact" id="contato">
+    <div class="content">
+        <p>Entre em contato comigo pelo Whatsapp, e-mail ou redes sociais. Se preferir, mande uma mensagem preenchendo os campos abaixo. </p>
+    </div>
+    <div class="container-contato">
+        <div class="contact-info">
+            <div class="box">
+                <div class="icon"><img src="/assets/imagens/icones/maps.png"></div>
+                <div class="text">
+                    <h3>Endereço</h3>
+                    <p>R. engenheiro pegado, <br>Vila carrao, São Paulo / SP, <br>CEP: 03430003</p>
+                </div>
+            </div>
+            <div class="box">
+                <a id="whats" href="#">
+                    <div class="icon">
+                        <img src="/assets/imagens/icones/telefone.png"></div>
+                </a>
+                <div class=" text ">
+                    <h3>Telefone</h3>
+                    <p>+55(11) 949087749</p>
+                </div>
+            </div>
+            <div class="box ">
+                <div class="icon "><img src="/assets/imagens/icones/email.jpg">
+                </div>
+                <div class="text ">
+                    <h3>Email</h3>
+                    <p>marcosalves276@outlook.com</p>
+                </div>
+            </div>
+        </div>
+     
+
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="contact-form ">
+            <h2>Envie uma mensagem</h2>
+            <div class="inputBox ">
+                <input ngModel type="text " name="name " required="required ">
+                <span>Nome Completo</span>
+            </div>
+            <div class="inputBox ">
+                <input ngModel type="text" name="email" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox ">
+                <textarea ngModel required="required " name="message "></textarea>
+                <span>Mensagem</span>
+            </div>
+            <div class="inputBox ">
+                <button type = "submit" class="btn btn-primary">Enviar </button>
+            </div>
+  
+        </form>
+  
+    </div>
+  
+  </section>
